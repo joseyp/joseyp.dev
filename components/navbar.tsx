@@ -35,7 +35,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/contacts" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contact
+              Contacts
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
