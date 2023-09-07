@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacts - joseyp.dev",
+};
+
 const Contacts = () => {
   return <div className="max-w-4xl mx-auto mt-8">
     <p>Get in touch with me.</p>
