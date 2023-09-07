@@ -1,11 +1,9 @@
-"use client";
-
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
-import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
+import ProgressBarWrapper from "@/components/ProgressBarWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ProgressBar color="#0D9488" />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ProgressBarWrapper />
           <div className="container">
             <Header />
             {children}
