@@ -28,6 +28,7 @@ const Header = () => {
       <style global jsx>{`
         .type::after {
           content: "_";
+          color: #0891b2;
           animation: cursor 1.1s infinite step-start;
         }
         @keyframes cursor {
