@@ -1,7 +1,8 @@
 "use client";
 
-import * as React from "react";
+import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import {
@@ -15,26 +16,29 @@ import {
 import ModeToggle from "@/components/mode-toggle";
 
 export function NavigationMenuDemo() {
+  const pathname = usePathname();
+  console.log(pathname);
+
   return (
     <NavigationMenu className="mx-auto md:mx-0 mt-3 md:mt-0">
       <NavigationMenuList className="mr-3">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={(pathname == "/" ? "active " : "") + navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/projects" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={(pathname == "/projects" ? "active " : "") + navigationMenuTriggerStyle()}>
               Projects
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/contacts" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={(pathname == "/contacts" ? "active " : "") + navigationMenuTriggerStyle()}>
               Contacts
             </NavigationMenuLink>
           </Link>

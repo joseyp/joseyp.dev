@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header";
 import ProgressBarWrapper from "@/components/ProgressBarWrapper";
 
@@ -18,6 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>

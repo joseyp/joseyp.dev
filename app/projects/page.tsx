@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "Projects - Jose Purba",
 };
 
+export const getStaticProps = () => {
+  return {
+    props: {
+      pageId: "projects",
+    },
+  };
+}
+
 const Projects = () => {
   return (
     <div className="w-full flex-grow">

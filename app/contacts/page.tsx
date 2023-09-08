@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "Contacts - Jose Purba",
 };
 
+export const getStaticProps = () => {
+  return {
+    props: {
+      pageId: "contacts",
+    },
+  };
+}
+
 const Contacts = () => {
   return <div className="w-full flex-grow">
     <p>Get in touch with me.</p>

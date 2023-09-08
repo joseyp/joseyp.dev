@@ -35,6 +35,9 @@ const Header = () => {
             opacity: 0;
           }
         }
+        a.group.active {
+          color: rgb(13 148 136);
+        }
       `}</style>
     </div>
   );
