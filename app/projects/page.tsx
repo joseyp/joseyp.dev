@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects - joseyp.dev",
+  title: "Projects - Jose Purba",
 };
 
 const Projects = () => {

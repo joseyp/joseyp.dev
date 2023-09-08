@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home - joseyp.dev",
+  title: "Jose Purba",
 };
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto mt-8">
       <h1 className="text-xl font-semibold mb-3">Hi, I&apos;m Jose!</h1>
       <p className="mb-3">
-        A passionate web developer from Jakarta, Indonesia.
+        A passionate web developer currenty based in Jakarta, Indonesia.
       </p>
       <p>
         I mainly use <span className="text-teal-600 font-bold">Laravel</span>{" "}

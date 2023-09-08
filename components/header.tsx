@@ -11,14 +11,16 @@ const Header = () => {
           550,
           "Jose",
           250,
-          "Jose Yolanda",
-          250,
+          "Jose Purba",
+          2500,
           "Jose Yolanda Purba",
+          2500,
           () => {},
         ]}
         speed={10}
         wrapper="span"
         cursor={false}
+        repeat={Infinity}
         className="type text-3xl font-semibold text-teal-600"
         style={{ display: "inline-block" }}
       />
