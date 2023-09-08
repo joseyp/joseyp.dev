@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ProgressBarWrapper />
-          <div className="container">
+          <div className="flex min-h-screen flex-col space-y-8 justify-between p-40 pt-6">
             <Header />
             {children}
           </div>

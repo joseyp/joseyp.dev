@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
+
+import ModeToggle from "@/components/mode-toggle";
 
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu className="mx-auto md:mx-0 mt-3 md:mt-0">
-      <NavigationMenuList>
+      <NavigationMenuList className="mr-3">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -40,8 +40,9 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
+      <ModeToggle />
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -66,6 +67,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";

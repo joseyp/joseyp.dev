@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const Contacts = () => {
-  return <div className="max-w-4xl mx-auto mt-8">
+  return <div className="w-full flex-grow">
     <p>Get in touch with me.</p>
     <ul className="mt-3">
       <li>Email - <a href="mailto:josprb@gmail.com" className="text-teal-600 font-semibold underline underline-offset-2">josprb@gmail.com</a></li>
