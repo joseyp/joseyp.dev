@@ -21,7 +21,7 @@ const Header = () => {
         wrapper="span"
         cursor={false}
         repeat={Infinity}
-        className="type text-3xl font-semibold text-teal-600"
+        className="type gradient-text text-2xl lg:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-600"
         style={{ display: "inline-block" }}
       />
       <NavigationMenuDemo />

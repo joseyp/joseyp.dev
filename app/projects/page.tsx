@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const Projects = () => {
   return (
-    <div className="w-full flex-grow">
+    <div className="w-full flex-grow text-sm lg:text-base">
       Sorry, this page is still under constructions.
     </div>
   );
