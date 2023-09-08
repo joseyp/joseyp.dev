@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
   return (
-    <div className="w-full flex grow-0 justify-between items-center text-center md:text-left">
+    <div className="w-full block lg:flex lg:grow-0 justify-between items-center text-center md:text-left">
       <TypeAnimation
         sequence={[
           550,
