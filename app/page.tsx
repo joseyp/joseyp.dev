@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full flex-grow  ">
+    <div className="w-full flex-grow">
       <h1 className="lg:text-lg font-semibold mb-3">Hi, I&apos;m Jose!</h1>
       <p className="mb-3 text-sm lg:text-base">
         A passionate web developer currenty based in Jakarta, Indonesia.
