@@ -17,7 +17,6 @@ import ModeToggle from "@/components/mode-toggle";
 
 export function NavigationMenuDemo() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <NavigationMenu className="mx-auto md:mx-0 mt-3 md:mt-0">
