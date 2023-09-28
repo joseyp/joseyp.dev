@@ -19,7 +19,7 @@ export default function Home() {
         projects.
       </p>
       <p className="text-sm lg:text-base">
-        Right now, I&apos;m learning{" "}
+        Right now, I&apos;m learning <span className="text-teal-600 font-bold">React.js</span> and{" "}
         <span className="text-teal-600 font-bold">Next.js</span> which I used to
         build this website.
       </p>
