@@ -12,7 +12,6 @@ const Contacts = () => {
       <li>Email - <a href="mailto:josprb@gmail.com" target="_blank" className="text-teal-600 font-semibold underline underline-offset-2">josprb@gmail.com</a></li>
       <li>Github - <a href="https://github.com/joseyp" target="_blank" className="text-teal-600 font-semibold underline underline-offset-2">github.com/joseyp</a></li>
       <li>LinkedIn - <a href="https://linkedin.com/in/josepurba" target="_blank" className="text-teal-600 font-semibold underline underline-offset-2">linkedin.com/in/josepurba</a></li>
-      <li>Discord - <span className="text-teal-600 font-semibold underline underline-offset-2">joseyp</span></li>
     </ul>
   </div>;
 };
